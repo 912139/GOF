@@ -70,9 +70,9 @@ namespace MyTools {
 
     //=============================================================================================
 
-    void __fastcall FileLoggerSingletone::OpenLogFile(const string& FN)
+    void __fastcall FileLoggerSingletone::OpenLogFile()
     {
-        logOut.open(FN, ios_base::out);
+        logOut.open("log.txt", ios_base::out);
     }
 
     void FileLoggerSingletone::CloseLogFile()
@@ -117,9 +117,9 @@ namespace MyTools {
         }
     }
 
-    void __fastcall LoggerSingletone::OpenLogFile(const string& FN)
+    void __fastcall LoggerSingletone::OpenLogFile()
     {
-        FileLoggerSingletone::getInstance().OpenLogFile(FN);
+        FileLoggerSingletone::getInstance().OpenLogFile();
     }
 
     void LoggerSingletone::CloseLogFile()
