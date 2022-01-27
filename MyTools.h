@@ -64,7 +64,7 @@ namespace MyTools {
             return theInstance;
         }
 
-        void __fastcall OpenLogFile(const std::string& FN);
+        void __fastcall OpenLogFile();
         void CloseLogFile();
         void __fastcall WriteToLog(const std::string& str);
         void __fastcall WriteToLog(const std::string& str, int n);
@@ -89,7 +89,7 @@ namespace MyTools {
         void __fastcall WriteToLog(const std::string& str);
         void __fastcall WriteToLog(const std::string& str, int n);
         void __fastcall WriteToLog(const std::string& str, double d);
-        void __fastcall OpenLogFile(const std::string& FN);
+        void __fastcall OpenLogFile();
         void CloseLogFile();
 
             private:
