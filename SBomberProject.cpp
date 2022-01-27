@@ -1,4 +1,4 @@
-﻿
+
 #include <conio.h>
 
 #include "SBomber.h"
@@ -10,7 +10,7 @@ using namespace std;
 
 int main(void)
 {
-    MyTools::LoggerSingletone::getInstance().OpenLogFile("log.txt");
+    MyTools::LoggerSingletone::getInstance().OpenLogFile();
 
     SBomber game;
 
