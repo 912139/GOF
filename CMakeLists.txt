@@ -25,4 +25,4 @@ add_executable(HW_1_SBomber
         SBomber.h
         SBomberProject.cpp
         Tank.cpp
-        Tank.h)
+        Tank.h ISbomber.cpp Sbomber.cpp ISbomber.h ICommand.h ICommand.cpp)
